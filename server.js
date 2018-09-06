@@ -5,7 +5,7 @@ var path = require('path');
 
 // set port
 var app = express();
-var PORT = process.env.PORT;
+var PORT = process.env.PORT || 3400;
 
 // pull in assets
 app.use(express.static(path.join(__dirname, './app/public')));
